@@ -28,11 +28,9 @@ Hotkeys:
 
 ## Repository layout
 
-- `Chessv10_cpp_hist8_115_mps_fp16.py` — training + engine entry (PyTorch + self-play)
-- `xqcpp_ext_hist8_115.cpp` — C++ extension (Board + MCTS search)
-- `build_xqcpp115.py` — optional build helper
-- `xiangqi_pvp.py` / `xiangqi_pvp_*` — PVP client(s)
-- `v10_runs/` — checkpoints (`latest.pth`, `model_step*.pth`)
+- `AlphaXiang_v0.1.py` — training + engine entry (PyTorch + self-play)
+- `xiangqi_pvp.py` — PVP client(s)
+- `xiangqi_zero.pth` — checkpoints
 
 ---
 
@@ -40,14 +38,9 @@ Hotkeys:
 
 - Python 3.11+
 - PyTorch with MPS support (macOS)
+- Import Cchess
 - (Optional) `pygame` for the PVP UI
 
-Python deps (example):
-
-```
-pip install -r requirements.txt
-```
----
 
 ## Training (self-play)
 
