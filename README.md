@@ -1,6 +1,6 @@
 # AlphaXiang — Chinese chess (Xiangqi) AlphaZero-style engine
 
-**A deliverable-first Xiangqi (Chinese chess) RL project:** C++ MCTS core + PyTorch policy/value network, Apple Silicon friendly (**MPS + FP16**), reproducible runs, and a PVP client (clocks + undo).
+**A deliverable-first Xiangqi (Chinese chess) RL project:** MCTS core + PyTorch policy/value network, Apple Silicon friendly (**MPS**), reproducible runs, and a PVP client (clocks + undo).
 
 ---
 
