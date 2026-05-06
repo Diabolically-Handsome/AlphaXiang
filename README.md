@@ -44,7 +44,7 @@ fixed openings, and side balancing where applicable.
 | Pikafish d4 | 50 | 15-26-9 | 39.0% |
 | Pikafish d5 | 50 | 3-37-10 | 16.0% |
 | Fairy-Stockfish d3 | 50 | 46-2-2 | 94.0% |
-| CNN best.pth | 50 | 49-0-1 | 99.0% |
+| CNN best.pth (Fromer V11 model) | 50 | 49-0-1 | 99.0% |
 
 These are short 50-game anchors, not a formal rating list.
 
