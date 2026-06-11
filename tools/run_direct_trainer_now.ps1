@@ -1,0 +1,3 @@
+$ErrorActionPreference = "Stop"
+
+& wsl.exe -e bash -lc "source '/home/laure/.virtualenvs/AlphaXiang Transformer/bin/activate' && python '/mnt/c/Users/Laure/Desktop/AlphaXiang Transformer/xiangqi_train.py' --foreground --human-data-dir '/mnt/c/Users/Laure/Desktop/AlphaXiang Transformer/human_bootstrap_data_elite_wdl' --selfplay-dirs '/mnt/c/Users/Laure/Desktop/AlphaXiang Transformer/selfplay_runs_bootstrap' --output-dir '/mnt/c/Users/Laure/Desktop/AlphaXiang Transformer/training_runs/run_001' --resume-path '/mnt/c/Users/Laure/Desktop/AlphaXiang Transformer/training_runs/run_001/latest.pt' --device cuda:0 --max-steps 70106 --log-interval-steps 20"

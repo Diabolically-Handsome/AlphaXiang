@@ -1,0 +1,75 @@
+# ========== Data & artifacts (huge, never commit) ==========
+human_bootstrap_data/
+human_bootstrap_data_elite_wdl/
+selfplay_runs/
+selfplay_runs_bootstrap/
+selfplay_runs_bootstrap_clean/
+selfplay_runs_bootstrap_clean_quarantine/
+selfplay_runs_bootstrap_drawfix_smoke/
+selfplay_runs_bootstrap_longcheck_probe_*/
+selfplay_runs_bootstrap_nocap_probe_*/
+arena_runs/
+arena_runs_drawfix_smoke/
+arena_openings/
+training_runs/
+wsl_start_probe/
+
+# Model weights & large binaries
+*.pt
+*.pth
+*.ckpt
+*.bin
+CNN/best.pth
+
+# ========== Logs ==========
+*.log
+*.err.log
+*stderr.log
+*stdout.log
+redirect_test.txt
+
+# ========== Python ==========
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Compiled C++ extensions
+*.so
+*.pyd
+*.dll
+build/
+dist/
+
+# ========== Virtual envs ==========
+.venv/
+venv/
+env/
+
+# ========== IDE / tooling local state ==========
+.idea/
+.vscode/
+.claude/
+*.iml
+.ipynb_checkpoints/
+
+# ========== OS cruft ==========
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========== Misc ==========
+*.tmp
+*.bak
+*.swp
+
+# Session-temp eval outputs
+tmp_v135_*
+v127_reaudit/
+/AlphaXiang
+
+# Paper draft - excluded until publication (user decision 2026-06-11)
+paper/
