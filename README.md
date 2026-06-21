@@ -49,7 +49,6 @@ xiangqi_arena.py               promotion-gate arena (chimera-capable)
 xiangqi_mcts_ext.py            Python wrapper for the C++ extension
 xqcpp_ext_hist8_115.cpp        C++ board, movegen, tensor encoder, batched MCTS
 xiangqi_model_battle_gui.py    visual GUI (Transformer vs. CNN baseline)
-CNN/                           CNN baseline used by the GUI
 tools/                         arenas, ladders, diagnostics, experiment scripts
 ```
 
