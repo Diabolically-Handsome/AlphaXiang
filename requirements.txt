@@ -1,0 +1,8 @@
+# Core (training / search / tests)
+torch>=2.4
+numpy>=1.26
+ninja>=1.11          # JIT-compiles the C++ MCTS extension on first import
+pytest>=8.0
+
+# Optional: the PVP/battle GUI additionally needs
+#   pip install pygame
