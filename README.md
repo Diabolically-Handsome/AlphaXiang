@@ -1,7 +1,33 @@
 # AlphaXiang
 
+[![CI](https://github.com/Diabolically-Handsome/AlphaXiang/actions/workflows/ci.yml/badge.svg)](https://github.com/Diabolically-Handsome/AlphaXiang/actions/workflows/ci.yml)
+
 A Transformer-based, AlphaZero-style **Xiangqi (Chinese Chess)** engine — distilled from
 a deep search oracle, then improved by self-play with a component-isolated training loop.
+
+## Quick start
+
+```bash
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+pytest -q                 # perft + rules + model spec (~1 min incl. C++ JIT compile)
+pytest -q -m slow         # deep perft (3.29M nodes)
+```
+
+The first import JIT-compiles the C++ MCTS extension (needs a C++17 toolchain; ninja
+comes from requirements.txt). To play against a trained network, download a checkpoint
+from the [releases](https://github.com/Diabolically-Handsome/AlphaXiang/releases),
+`pip install pygame`, and run `xiangqi_model_battle_gui.py` with `--transformer-checkpoint`.
+
+## Correctness
+
+- **Perft-verified move generator**: the C++ movegen reproduces the community-standard
+  Xiangqi perft counts from the starting position — 44 / 1,920 / 79,666 / 3,290,240
+  at depths 1–4 ([tests/test_perft.py](tests/test_perft.py))
+- The optimized in-check routine is cross-checked against a generator-based slow
+  reference across seeded random playouts ([tests/test_board.py](tests/test_board.py))
+- Model spec pinned by tests: exact parameter counts (38,641,766 with both attention
+  biases), head shapes, finite gradients ([tests/test_model.py](tests/test_model.py))
 
 ## Model
 
